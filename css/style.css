@@ -1,4 +1,13 @@
 @charset "utf-8";
+/*------------------------------------------------------------------
+[Master Stylesheet]
+
+Project: Rhythm
+Version: 3.7.1
+Last change: 3 August 2022
+Primary use: MultiPurpose Template  
+-------------------------------------------------------------------*/
+
 @import "font-awesome.min.css";
 @import "et-line.css";
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,700);
@@ -384,7 +393,7 @@ img:not([draggable]), embed, object, video{
    ============================== */
 
 body{
-    color: #111;
+    color: rgb(255, 255, 255);
     font-size: 14px;
     font-family: "Open Sans", arial, sans-serif;
     line-height: 1.6;    
@@ -742,6 +751,13 @@ a.btn-mod:focus{
     border: 2px solid rgba(255,255,255, .75);
     background: transparent;
 }
+
+.btn-mod5.btn-border-w2{
+    color: rgb(0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, 0.75);
+    background: transparent;
+}
+
 .btn-mod.btn-border-w:hover,
 .btn-mod.btn-border-w:focus{
     color: #111;
@@ -749,9 +765,16 @@ a.btn-mod:focus{
     background: #fff;
 }
 
+.btn-mod.btn-border-w:hover,
+.btn-mod.btn-border-w:focus{
+    color: #111;
+    border-color: transparent;
+    background: rgb(255, 0, 0);
+}
+
 .btn-mod.btn-w{
     color: #111;
-    background: rgba(255,255,255, .8);
+    background: #D7A461;
 }
 .btn-mod.btn-w:hover,
 .btn-mod.btn-w:focus{
@@ -770,8 +793,8 @@ a.btn-mod:focus{
 }
 
 .btn-mod.btn-gray{
-    color: #777;
-    background: #e5e5e5;
+    color: #fff;
+    background: #DB0032;
 }
 .btn-mod.btn-gray:hover,
 .btn-mod.btn-gray:focus{
@@ -2429,8 +2452,30 @@ a.logo:hover{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     
-    padding: 140px 0;
+    padding: 65px 0;
 }
+
+.page-section2 {
+    width: 100%;
+    display: block;    
+    position: relative;
+    overflow: hidden;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+    padding: 29px 0px 0px 0px;
+}
+
 .small-section{
     padding: 70px 0;
 }
@@ -2477,7 +2522,7 @@ a.logo:hover{
     background-color: #f4f4f4;
 }
 .bg-gray-lighter{
-    background-color: #f8f8f8;
+    background-color: #DB0032;
 }
 .bg-dark,
 .bg-dark-lighter,
@@ -2740,12 +2785,11 @@ a.logo:hover{
 .section-title {
     margin-bottom: 15px;
     font-size: 18px;
-    font-weight: 500;
-    text-transform: none;
+    font-weight: 400;
+    text-transform: uppercase;
     text-align: center;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.5em;
     line-height: 1.4;
-    color: #D7A461;
 }
 .section-more{
     margin-top: 7px;
@@ -3743,14 +3787,20 @@ a.logo:hover{
     overflow: visible;
     border-bottom: 1px solid transparent;
 }
+
+.banner-section2{
+    overflow: visible;
+    border: 30px solid transparent;
+}
+
 .banner-heading{
     margin-top: 0;
     margin-bottom: 20px;
-    font-size: 20px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 300;
     letter-spacing: 0.3em;
-    text-transform: none;
-    color: rgb(215 164 97 / 90%);
+    text-transform: uppercase;
+    color: rgba(255,255,255, 0.9);
 }
 
 .banner-decription{
@@ -4184,7 +4234,7 @@ a.logo:hover{
 .footer-copy{
     margin-bottom: 5px;
     text-transform: uppercase;
-    letter-spacing: 0.5em;
+    letter-spacing: 0.1em;
 }
 .footer-made{
     font-size: 11px;
@@ -5732,7 +5782,7 @@ section:hover .small-item-carousel .owl-next{
     position: absolute;
     top:0;
     left: 0;
-    background: #58bf44;
+    background: #D7A461;
     
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
